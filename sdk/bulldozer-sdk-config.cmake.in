@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+ 
+set(BULLDOZER_SDK_FOUND ON)
+
+set_and_check(BULLDOZER_SDK_INCLUDE_DIRS  "${PACKAGE_PREFIX_DIR}/include/")
+set_and_check(BULLDOZER_SDK_LIBRARY_DIRS  "${PACKAGE_PREFIX_DIR}/lib")
+ 
+include("${PACKAGE_PREFIX_DIR}/lib/bulldozer/bulldozer-sdk-targets.cmake")

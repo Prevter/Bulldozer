@@ -1,0 +1,6 @@
+[submodule "thirdparty/minhook"]
+	path = thirdparty/minhook
+	url = https://github.com/TsudaKageyu/minhook
+[submodule "thirdparty/json"]
+	path = thirdparty/json
+	url = https://github.com/nlohmann/json
