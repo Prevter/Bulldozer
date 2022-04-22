@@ -30,10 +30,10 @@ DWORD WINAPI MainThread(LPVOID param) {
     std::cout << "  / __  | / / / / / / / / / __  / / __ \\/_  / / _ \\  / ___/\n";
     std::cout << " / /_/ / / /_/ / / / / / / /_/ / / /_/ / / /_/  __/ / /    \n";
     std::cout << "/_____/  \\__,_/ /_/ /_/  \\__,_/  \\____/ /___/\\___/ /_/     \n";
-    std::cout << "Mod loader for Teardown\nVersion 0.9.5\n";
+    std::cout << "Mod loader for Teardown\nVersion 1.0.0\n";
 
     uintptr_t moduleBase = (uintptr_t)GetModuleHandleA(NULL);
-    uintptr_t baseAddress = moduleBase + 0x441780;
+    uintptr_t baseAddress = moduleBase + 0x41B480;
 
     while (true) {
         uintptr_t ptr = *(uintptr_t*)(baseAddress);
